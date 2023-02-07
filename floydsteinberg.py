@@ -37,11 +37,5 @@ for j in range(img.size[1]):
             sfn_1_16 = round((error/16)*1)
             new_tien = pixels[i+1,j+1][0]+sfn_1_16
             pixels[i+1,j+1] = (new_tien,new_tien,new_tien)
-#        bodka = pixels[i,j]
-# for i in range(img.size[0]):
-#     for j in range(img.size[1]):
-#         if pixels[i,j][0] > 127:
-#             pixels[i,j] = (255,255,255)
-#         else:
-#             pixels[i,j] = (0,0,0)
+
 img.save("girlnew.png")
